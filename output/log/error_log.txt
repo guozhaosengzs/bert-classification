@@ -1,0 +1,11 @@
+
+Traceback (most recent call last):
+  File "/ace/home/zguo/glenn_hubbard/new_metrics_classification.py", line 321, in <module>
+    process_excel_file(input_excel_file, output_excel_file, model, tokenizer)
+  File "/ace/home/zguo/glenn_hubbard/new_metrics_classification.py", line 48, in process_excel_file
+    processed_texts = [re.sub(r'[^\u0000-\uFFFF]+', ' ', text) for text in texts]
+  File "/ace/home/zguo/glenn_hubbard/new_metrics_classification.py", line 48, in <listcomp>
+    processed_texts = [re.sub(r'[^\u0000-\uFFFF]+', ' ', text) for text in texts]
+  File "/gpfs/grid/anaconda/conda-envs/zguo/hubbard/lib/python3.10/re.py", line 209, in sub
+    return _compile(pattern, flags).sub(repl, string, count)
+TypeError: expected string or bytes-like object

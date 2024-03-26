@@ -1,0 +1,636 @@
+python classification.py
+Some weights of the model checkpoint at bert-base-uncased were not used when initializing BertModel: ['cls.seq_relationship.weight', 'cls.predictions.transform.LayerNorm.bias', 'cls.predictions.transform.LayerNorm.weight', 'cls.predictions.transform.dense.bias', 'cls.seq_relationship.bias', 'cls.predictions.decoder.weight', 'cls.predictions.bias', 'cls.predictions.transform.dense.weight']
+- This IS expected if you are initializing BertModel from the checkpoint of a model trained on another task or with another architecture (e.g. initializing a BertForSequenceClassification model from a BertForPreTraining model).     
+- This IS NOT expected if you are initializing BertModel from the checkpoint of a model that you expect to be exactly identical (initializing a BertForSequenceClassification model from a BertForSequenceClassification model).        
+Current Device: cpu 
+
+Epoch 1, train loss: 6.1570, train acc: 0.0833, test loss: 5.1565, test acc: 0.2500, test f1: 0.1216
+Time elapsed: 3 minutes, 45 seconds
+
+Correct label counts vs. total label counts for test set evaluation in Epoch 1:
+irrelevant: 0 / 0
+fair value: 24 / 0
+deal price: 0 / 0
+discounted cash flow: 8 / 28
+market efficiency: 0 / 0
+stock price: 0 / 0
+market multiples: 0 / 0
+analyst price target: 0 / 0
+multiples-based valuation: 0 / 0
+abnormal return: 0 / 0
+============================================================
+Traceback (most recent call last):
+  File "C:\WORK_HARDER\Git_Projects\glenn_hubbard\classification.py", line 111, in <module>
+    outputs = model(batch_input_ids, attention_mask=batch_attention_mask)
+  File "C:\WORK_HARDER\anaconda3\envs\ag\lib\site-packages\torch\nn\modules\module.py", line 1501, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "C:\WORK_HARDER\anaconda3\envs\ag\lib\site-packages\transformers\models\bert\modeling_bert.py", line 1020, in forward
+    encoder_outputs = self.encoder(
+  File "C:\WORK_HARDER\anaconda3\envs\ag\lib\site-packages\torch\nn\modules\module.py", line 1501, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "C:\WORK_HARDER\anaconda3\envs\ag\lib\site-packages\transformers\models\bert\modeling_bert.py", line 610, in forward
+    layer_outputs = layer_module(
+  File "C:\WORK_HARDER\anaconda3\envs\ag\lib\site-packages\torch\nn\modules\module.py", line 1501, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "C:\WORK_HARDER\anaconda3\envs\ag\lib\site-packages\transformers\models\bert\modeling_bert.py", line 495, in forward
+    self_attention_outputs = self.attention(
+  File "C:\WORK_HARDER\anaconda3\envs\ag\lib\site-packages\torch\nn\modules\module.py", line 1501, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "C:\WORK_HARDER\anaconda3\envs\ag\lib\site-packages\transformers\models\bert\modeling_bert.py", line 425, in forward
+    self_outputs = self.self(
+  File "C:\WORK_HARDER\anaconda3\envs\ag\lib\site-packages\torch\nn\modules\module.py", line 1501, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "C:\WORK_HARDER\anaconda3\envs\ag\lib\site-packages\transformers\models\bert\modeling_bert.py", line 284, in forward
+    mixed_query_layer = self.query(hidden_states)
+  File "C:\WORK_HARDER\anaconda3\envs\ag\lib\site-packages\torch\nn\modules\module.py", line 1501, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "C:\WORK_HARDER\anaconda3\envs\ag\lib\site-packages\torch\nn\modules\linear.py", line 114, in forward
+    return F.linear(input, self.weight, self.bias)
+KeyboardInterrupt
+^C
+(ag) C:\WORK_HARDER\Git_Projects\glenn_hubbard>
+
+(ag) C:\WORK_HARDER\Git_Projects\glenn_hubbard>python classification.py
+Some weights of the model checkpoint at bert-base-uncased were not used when initializing BertModel: ['cls.predictions.transform.LayerNorm.weight', 'cls.seq_relationship.bias', 'cls.predictions.decoder.weight', 'cls.predictions.transform.LayerNorm.bias', 'cls.predictions.transform.dense.weight', 'cls.predictions.transform.dense.bias', 'cls.predictions.bias', 'cls.seq_relationship.weight']
+- This IS expected if you are initializing BertModel from the checkpoint of a model trained on another task or with another architecture (e.g. initializing a BertForSequenceClassification model from a BertForPreTraining model).     
+- This IS NOT expected if you are initializing BertModel from the checkpoint of a model that you expect to be exactly identical (initializing a BertForSequenceClassification model from a BertForSequenceClassification model).        
+Current Device: cpu 
+
+Epoch 1, train loss: 6.1570, train acc: 0.0833, test loss: 5.1565, test acc: 0.2500, test f1: 0.1216
+Time elapsed: 3 minutes, 53 seconds
+
+Correct label counts vs. total label counts for test set evaluation in Epoch 1:
+discounted cash flow: 8 / 28
+============================================================
+Epoch 2, train loss: 5.0179, train acc: 0.2812, test loss: 4.1654, test acc: 0.2812, test f1: 0.1298
+Time elapsed: 3 minutes, 51 seconds
+
+Correct label counts vs. total label counts for test set evaluation in Epoch 2:
+discounted cash flow: 9 / 30
+============================================================
+Epoch 3, train loss: 4.1679, train acc: 0.3281, test loss: 3.3702, test acc: 0.2812, test f1: 0.1266
+Time elapsed: 3 minutes, 52 seconds
+
+Correct label counts vs. total label counts for test set evaluation in Epoch 3:
+discounted cash flow: 9 / 31
+============================================================
+Epoch 4, train loss: 3.4887, train acc: 0.3281, test loss: 2.8808, test acc: 0.3438, test f1: 0.2478
+Time elapsed: 3 minutes, 43 seconds
+
+Correct label counts vs. total label counts for test set evaluation in Epoch 4:
+discounted cash flow: 7 / 19
+market efficiency: 4 / 12
+============================================================
+Epoch 5, train loss: 3.1807, train acc: 0.3698, test loss: 2.5744, test acc: 0.4375, test f1: 0.3216
+Time elapsed: 3 minutes, 33 seconds
+
+Correct label counts vs. total label counts for test set evaluation in Epoch 5:
+discounted cash flow: 7 / 15
+market efficiency: 7 / 16
+============================================================
+Epoch 6, train loss: 2.6851, train acc: 0.3802, test loss: 2.3868, test acc: 0.4062, test f1: 0.2872
+Time elapsed: 3 minutes, 42 seconds
+
+Correct label counts vs. total label counts for test set evaluation in Epoch 6:
+discounted cash flow: 9 / 21
+market efficiency: 4 / 10
+============================================================
+Epoch 7, train loss: 2.6243, train acc: 0.4219, test loss: 2.2715, test acc: 0.5000, test f1: 0.4071
+Time elapsed: 3 minutes, 46 seconds
+
+Correct label counts vs. total label counts for test set evaluation in Epoch 7:
+deal price: 1 / 1
+discounted cash flow: 8 / 15
+market efficiency: 7 / 15
+============================================================
+Epoch 8, train loss: 2.4087, train acc: 0.4271, test loss: 2.1729, test acc: 0.5000, test f1: 0.4087
+Time elapsed: 3 minutes, 50 seconds
+
+Correct label counts vs. total label counts for test set evaluation in Epoch 8:
+deal price: 1 / 1
+discounted cash flow: 8 / 14
+market efficiency: 7 / 16
+============================================================
+Epoch 9, train loss: 2.2149, train acc: 0.4375, test loss: 2.0753, test acc: 0.5000, test f1: 0.4071
+Time elapsed: 3 minutes, 46 seconds
+
+Correct label counts vs. total label counts for test set evaluation in Epoch 9:
+deal price: 1 / 1
+discounted cash flow: 8 / 15
+market efficiency: 7 / 15
+============================================================
+Epoch 10, train loss: 2.1814, train acc: 0.4844, test loss: 1.9987, test acc: 0.5000, test f1: 0.4012
+Time elapsed: 3 minutes, 45 seconds
+
+Correct label counts vs. total label counts for test set evaluation in Epoch 10:
+deal price: 1 / 2
+discounted cash flow: 8 / 16
+market efficiency: 7 / 14
+============================================================
+Epoch 11, train loss: 1.9909, train acc: 0.4896, test loss: 1.9288, test acc: 0.5000, test f1: 0.4016
+Time elapsed: 3 minutes, 46 seconds
+
+Correct label counts vs. total label counts for test set evaluation in Epoch 11:
+deal price: 1 / 2
+discounted cash flow: 8 / 15
+market efficiency: 7 / 15
+============================================================
+Epoch 12, train loss: 1.8463, train acc: 0.5417, test loss: 1.8316, test acc: 0.5938, test f1: 0.5347
+Time elapsed: 3 minutes, 45 seconds
+
+Correct label counts vs. total label counts for test set evaluation in Epoch 12:
+deal price: 5 / 7
+discounted cash flow: 7 / 14
+market efficiency: 7 / 11
+============================================================
+Epoch 13, train loss: 1.7999, train acc: 0.5365, test loss: 1.7604, test acc: 0.5312, test f1: 0.4757
+Time elapsed: 3 minutes, 50 seconds
+
+Correct label counts vs. total label counts for test set evaluation in Epoch 13:
+deal price: 4 / 6
+discounted cash flow: 7 / 15
+market efficiency: 6 / 11
+============================================================
+Epoch 14, train loss: 1.6644, train acc: 0.5729, test loss: 1.7264, test acc: 0.5000, test f1: 0.4257
+Time elapsed: 3 minutes, 48 seconds
+
+Correct label counts vs. total label counts for test set evaluation in Epoch 14:
+deal price: 2 / 4
+discounted cash flow: 7 / 14
+market efficiency: 7 / 14
+============================================================
+Epoch 15, train loss: 1.5104, train acc: 0.6615, test loss: 1.6874, test acc: 0.5938, test f1: 0.5417
+Time elapsed: 3 minutes, 46 seconds
+
+Correct label counts vs. total label counts for test set evaluation in Epoch 15:
+deal price: 6 / 10
+discounted cash flow: 7 / 12
+market efficiency: 6 / 9
+market multiples: 0 / 1
+============================================================
+Epoch 16, train loss: 1.5127, train acc: 0.6667, test loss: 1.6005, test acc: 0.5625, test f1: 0.5094
+Time elapsed: 3 minutes, 47 seconds
+
+Correct label counts vs. total label counts for test set evaluation in Epoch 16:
+deal price: 4 / 8
+discounted cash flow: 7 / 11
+market efficiency: 7 / 12
+market multiples: 0 / 1
+============================================================
+Epoch 17, train loss: 1.3003, train acc: 0.7083, test loss: 1.5401, test acc: 0.5938, test f1: 0.5442
+Time elapsed: 3 minutes, 44 seconds
+
+Correct label counts vs. total label counts for test set evaluation in Epoch 17:
+deal price: 6 / 10
+discounted cash flow: 7 / 13
+market efficiency: 6 / 8
+market multiples: 0 / 1
+============================================================
+Epoch 18, train loss: 1.2097, train acc: 0.7292, test loss: 1.4669, test acc: 0.5938, test f1: 0.5430
+Time elapsed: 3 minutes, 44 seconds
+
+Correct label counts vs. total label counts for test set evaluation in Epoch 18:
+deal price: 5 / 10
+discounted cash flow: 7 / 10
+market efficiency: 7 / 11
+market multiples: 0 / 1
+============================================================
+Epoch 19, train loss: 1.0290, train acc: 0.7969, test loss: 1.4142, test acc: 0.5625, test f1: 0.5129
+Time elapsed: 3 minutes, 44 seconds
+
+Correct label counts vs. total label counts for test set evaluation in Epoch 19:
+deal price: 5 / 8
+discounted cash flow: 7 / 13
+market efficiency: 6 / 10
+market multiples: 0 / 1
+============================================================
+Epoch 20, train loss: 0.9691, train acc: 0.8281, test loss: 1.3579, test acc: 0.5938, test f1: 0.5423
+Time elapsed: 3 minutes, 44 seconds
+
+Correct label counts vs. total label counts for test set evaluation in Epoch 20:
+deal price: 6 / 11
+discounted cash flow: 7 / 11
+market efficiency: 6 / 9
+market multiples: 0 / 1
+============================================================
+Epoch 21, train loss: 0.9350, train acc: 0.8177, test loss: 1.2996, test acc: 0.5938, test f1: 0.5427
+Time elapsed: 3 minutes, 44 seconds
+
+Correct label counts vs. total label counts for test set evaluation in Epoch 21:
+deal price: 5 / 8
+discounted cash flow: 7 / 11
+market efficiency: 6 / 11
+market multiples: 1 / 2
+============================================================
+Epoch 22, train loss: 0.7487, train acc: 0.8698, test loss: 1.2272, test acc: 0.6562, test f1: 0.6264
+Time elapsed: 3 minutes, 44 seconds
+
+Correct label counts vs. total label counts for test set evaluation in Epoch 22:
+deal price: 6 / 9
+discounted cash flow: 8 / 13
+market efficiency: 6 / 8
+market multiples: 0 / 1
+stock price: 1 / 1
+============================================================
+Epoch 23, train loss: 0.6787, train acc: 0.9010, test loss: 1.1769, test acc: 0.6250, test f1: 0.5723
+Time elapsed: 3 minutes, 44 seconds
+
+Correct label counts vs. total label counts for test set evaluation in Epoch 23:
+deal price: 6 / 9
+discounted cash flow: 7 / 12
+market efficiency: 6 / 9
+market multiples: 1 / 2
+============================================================
+Epoch 24, train loss: 0.5900, train acc: 0.9010, test loss: 1.1516, test acc: 0.6562, test f1: 0.5987
+Time elapsed: 3 minutes, 44 seconds
+
+Correct label counts vs. total label counts for test set evaluation in Epoch 24:
+deal price: 5 / 7
+discounted cash flow: 8 / 12
+market efficiency: 7 / 11
+market multiples: 1 / 2
+============================================================
+Epoch 25, train loss: 0.5066, train acc: 0.9115, test loss: 1.1338, test acc: 0.6250, test f1: 0.5685
+Time elapsed: 3 minutes, 44 seconds
+
+Correct label counts vs. total label counts for test set evaluation in Epoch 25:
+deal price: 6 / 9
+discounted cash flow: 8 / 13
+market efficiency: 6 / 9
+market multiples: 0 / 1
+============================================================
+Epoch 26, train loss: 0.4026, train acc: 0.9583, test loss: 1.1083, test acc: 0.6250, test f1: 0.5723
+Time elapsed: 3 minutes, 44 seconds
+
+Correct label counts vs. total label counts for test set evaluation in Epoch 26:
+deal price: 6 / 9
+discounted cash flow: 7 / 12
+market efficiency: 6 / 9
+market multiples: 1 / 2
+============================================================
+Epoch 27, train loss: 0.4091, train acc: 0.9479, test loss: 1.1286, test acc: 0.5938, test f1: 0.5427
+Time elapsed: 3 minutes, 45 seconds
+
+Correct label counts vs. total label counts for test set evaluation in Epoch 27:
+deal price: 6 / 10
+discounted cash flow: 7 / 10
+market efficiency: 6 / 11
+market multiples: 0 / 1
+============================================================
+Epoch 28, train loss: 0.4137, train acc: 0.9531, test loss: 1.0930, test acc: 0.6250, test f1: 0.5723
+Time elapsed: 3 minutes, 45 seconds
+
+Correct label counts vs. total label counts for test set evaluation in Epoch 28:
+deal price: 6 / 9
+discounted cash flow: 7 / 12
+market efficiency: 6 / 9
+market multiples: 1 / 2
+============================================================
+Epoch 29, train loss: 0.4181, train acc: 0.9375, test loss: 1.1240, test acc: 0.6875, test f1: 0.6598
+Time elapsed: 3 minutes, 44 seconds
+
+Correct label counts vs. total label counts for test set evaluation in Epoch 29:
+deal price: 6 / 9
+discounted cash flow: 7 / 9
+market efficiency: 7 / 11
+market multiples: 1 / 2
+stock price: 1 / 1
+============================================================
+Epoch 30, train loss: 0.3857, train acc: 0.9375, test loss: 1.1389, test acc: 0.6250, test f1: 0.5984
+Time elapsed: 3 minutes, 44 seconds
+
+Correct label counts vs. total label counts for test set evaluation in Epoch 30:
+deal price: 6 / 10
+discounted cash flow: 7 / 10
+market efficiency: 6 / 10
+market multiples: 0 / 1
+stock price: 1 / 1
+============================================================
+Epoch 31, train loss: 0.3457, train acc: 0.9479, test loss: 1.0717, test acc: 0.5938, test f1: 0.5788
+Time elapsed: 3 minutes, 44 seconds
+
+Correct label counts vs. total label counts for test set evaluation in Epoch 31:
+deal price: 5 / 9
+discounted cash flow: 7 / 10
+fair value: 13 / 1
+market efficiency: 6 / 10
+market multiples: 0 / 1
+stock price: 1 / 1
+============================================================
+Epoch 32, train loss: 0.2450, train acc: 0.9792, test loss: 1.0753, test acc: 0.6562, test f1: 0.6292
+Time elapsed: 3 minutes, 44 seconds
+
+Correct label counts vs. total label counts for test set evaluation in Epoch 32:
+deal price: 6 / 10
+discounted cash flow: 7 / 9
+market efficiency: 7 / 11
+market multiples: 0 / 1
+stock price: 1 / 1
+============================================================
+Epoch 33, train loss: 0.2539, train acc: 0.9635, test loss: 1.0235, test acc: 0.6562, test f1: 0.6349
+Time elapsed: 3 minutes, 47 seconds
+
+Correct label counts vs. total label counts for test set evaluation in Epoch 33:
+deal price: 6 / 10
+discounted cash flow: 6 / 8
+market efficiency: 7 / 10
+market multiples: 0 / 1
+stock price: 2 / 3
+============================================================
+Epoch 34, train loss: 0.2250, train acc: 0.9844, test loss: 1.0671, test acc: 0.7188, test f1: 0.7112
+Time elapsed: 3 minutes, 47 seconds
+
+Correct label counts vs. total label counts for test set evaluation in Epoch 34:
+deal price: 5 / 6
+discounted cash flow: 8 / 10
+fair value: 10 / 2
+market efficiency: 7 / 11
+market multiples: 1 / 2
+stock price: 1 / 1
+============================================================
+Epoch 35, train loss: 0.1799, train acc: 1.0000, test loss: 0.9512, test acc: 0.7188, test f1: 0.7082
+Time elapsed: 3 minutes, 47 seconds
+
+Correct label counts vs. total label counts for test set evaluation in Epoch 35:
+deal price: 7 / 10
+discounted cash flow: 8 / 12
+fair value: 10 / 1
+market efficiency: 6 / 7
+market multiples: 0 / 1
+stock price: 1 / 1
+============================================================
+Epoch 36, train loss: 0.1873, train acc: 0.9792, test loss: 1.1186, test acc: 0.6875, test f1: 0.6368
+Time elapsed: 3 minutes, 46 seconds
+
+Correct label counts vs. total label counts for test set evaluation in Epoch 36:
+deal price: 6 / 9
+discounted cash flow: 8 / 8
+market efficiency: 8 / 14
+market multiples: 0 / 1
+============================================================
+Epoch 37, train loss: 0.1994, train acc: 0.9688, test loss: 1.0179, test acc: 0.7188, test f1: 0.7193
+Time elapsed: 3 minutes, 47 seconds
+
+Correct label counts vs. total label counts for test set evaluation in Epoch 37:
+deal price: 6 / 10
+discounted cash flow: 6 / 7
+fair value: 10 / 1
+market efficiency: 8 / 11
+market multiples: 0 / 1
+stock price: 2 / 2
+============================================================
+Epoch 38, train loss: 0.2223, train acc: 0.9740, test loss: 0.9382, test acc: 0.7500, test f1: 0.7355
+Time elapsed: 3 minutes, 51 seconds
+
+Correct label counts vs. total label counts for test set evaluation in Epoch 38:
+deal price: 7 / 9
+discounted cash flow: 9 / 13
+fair value: 9 / 1
+market efficiency: 6 / 7
+market multiples: 0 / 1
+stock price: 1 / 1
+============================================================
+Epoch 39, train loss: 0.2145, train acc: 0.9844, test loss: 1.2989, test acc: 0.6250, test f1: 0.5899
+Time elapsed: 3 minutes, 47 seconds
+
+Correct label counts vs. total label counts for test set evaluation in Epoch 39:
+analyst price target: 0 / 1
+deal price: 4 / 6
+discounted cash flow: 8 / 10
+fair value: 13 / 2
+market efficiency: 7 / 13
+============================================================
+Epoch 40, train loss: 0.1821, train acc: 0.9792, test loss: 0.9392, test acc: 0.6875, test f1: 0.6869
+Time elapsed: 3 minutes, 50 seconds
+
+Correct label counts vs. total label counts for test set evaluation in Epoch 40:
+analyst price target: 0 / 1
+deal price: 7 / 11
+discounted cash flow: 6 / 9
+fair value: 11 / 1
+market efficiency: 6 / 8
+stock price: 2 / 2
+============================================================
+Epoch 41, train loss: 0.1687, train acc: 0.9792, test loss: 0.9909, test acc: 0.7188, test f1: 0.7166
+Time elapsed: 3 minutes, 44 seconds
+
+Correct label counts vs. total label counts for test set evaluation in Epoch 41:
+deal price: 6 / 9
+discounted cash flow: 6 / 7
+fair value: 10 / 1
+market efficiency: 8 / 11
+market multiples: 0 / 1
+stock price: 2 / 3
+============================================================
+Epoch 42, train loss: 0.1337, train acc: 0.9844, test loss: 1.1136, test acc: 0.7188, test f1: 0.7170
+Time elapsed: 3 minutes, 44 seconds
+
+Correct label counts vs. total label counts for test set evaluation in Epoch 42:
+deal price: 6 / 8
+discounted cash flow: 6 / 6
+fair value: 10 / 1
+market efficiency: 8 / 13
+market multiples: 1 / 2
+stock price: 1 / 2
+============================================================
+Epoch 43, train loss: 0.1510, train acc: 0.9844, test loss: 0.9729, test acc: 0.7188, test f1: 0.7191
+Time elapsed: 3 minutes, 44 seconds
+
+Correct label counts vs. total label counts for test set evaluation in Epoch 43:
+deal price: 6 / 9
+discounted cash flow: 7 / 9
+fair value: 10 / 1
+market efficiency: 7 / 10
+market multiples: 0 / 1
+stock price: 2 / 2
+============================================================
+Epoch 44, train loss: 0.1016, train acc: 0.9948, test loss: 0.9364, test acc: 0.7500, test f1: 0.7498
+Time elapsed: 3 minutes, 44 seconds
+
+Correct label counts vs. total label counts for test set evaluation in Epoch 44:
+deal price: 6 / 9
+discounted cash flow: 7 / 8
+fair value: 9 / 1
+market efficiency: 8 / 11
+market multiples: 0 / 1
+stock price: 2 / 2
+============================================================
+Epoch 45, train loss: 0.0863, train acc: 1.0000, test loss: 1.0602, test acc: 0.7188, test f1: 0.7127
+Time elapsed: 3 minutes, 44 seconds
+
+Correct label counts vs. total label counts for test set evaluation in Epoch 45:
+deal price: 6 / 8
+discounted cash flow: 6 / 7
+fair value: 10 / 1
+market efficiency: 8 / 12
+market multiples: 1 / 2
+stock price: 1 / 2
+============================================================
+Epoch 46, train loss: 0.1186, train acc: 0.9896, test loss: 1.0771, test acc: 0.7500, test f1: 0.7428
+Time elapsed: 3 minutes, 44 seconds
+
+Correct label counts vs. total label counts for test set evaluation in Epoch 46:
+deal price: 6 / 8
+discounted cash flow: 7 / 8
+fair value: 9 / 1
+market efficiency: 8 / 12
+market multiples: 1 / 2
+stock price: 1 / 1
+============================================================
+Epoch 47, train loss: 0.0904, train acc: 0.9896, test loss: 0.9595, test acc: 0.7812, test f1: 0.7737
+Time elapsed: 3 minutes, 44 seconds
+
+Correct label counts vs. total label counts for test set evaluation in Epoch 47:
+deal price: 6 / 7
+discounted cash flow: 8 / 9
+fair value: 8 / 1
+market efficiency: 8 / 12
+market multiples: 1 / 2
+stock price: 1 / 1
+============================================================
+Epoch 48, train loss: 0.0720, train acc: 1.0000, test loss: 0.9475, test acc: 0.7500, test f1: 0.7498
+Time elapsed: 3 minutes, 44 seconds
+
+Correct label counts vs. total label counts for test set evaluation in Epoch 48:
+analyst price target: 0 / 1
+deal price: 6 / 9
+discounted cash flow: 7 / 8
+fair value: 9 / 1
+market efficiency: 8 / 11
+stock price: 2 / 2
+============================================================
+Epoch 49, train loss: 0.1110, train acc: 0.9896, test loss: 0.9074, test acc: 0.7500, test f1: 0.7482
+Time elapsed: 3 minutes, 44 seconds
+
+Correct label counts vs. total label counts for test set evaluation in Epoch 49:
+analyst price target: 0 / 1
+deal price: 6 / 8
+discounted cash flow: 8 / 10
+fair value: 9 / 1
+market efficiency: 7 / 10
+stock price: 2 / 2
+============================================================
+Epoch 50, train loss: 0.0550, train acc: 1.0000, test loss: 0.7999, test acc: 0.7812, test f1: 0.7746
+Time elapsed: 3 minutes, 44 seconds
+
+Correct label counts vs. total label counts for test set evaluation in Epoch 50:
+analyst price target: 0 / 1
+deal price: 7 / 9
+discounted cash flow: 9 / 12
+fair value: 8 / 1
+market efficiency: 6 / 7
+stock price: 2 / 2
+============================================================
+Epoch 51, train loss: 0.0604, train acc: 1.0000, test loss: 0.9901, test acc: 0.7500, test f1: 0.7403
+Time elapsed: 3 minutes, 44 seconds
+
+Correct label counts vs. total label counts for test set evaluation in Epoch 51:
+analyst price target: 0 / 1
+deal price: 6 / 8
+discounted cash flow: 8 / 9
+fair value: 9 / 1
+market efficiency: 8 / 12
+stock price: 1 / 1
+============================================================
+Epoch 52, train loss: 0.0889, train acc: 0.9948, test loss: 0.9916, test acc: 0.7188, test f1: 0.7191
+Time elapsed: 3 minutes, 44 seconds
+
+Correct label counts vs. total label counts for test set evaluation in Epoch 52:
+analyst price target: 0 / 1
+deal price: 6 / 9
+discounted cash flow: 7 / 9
+fair value: 10 / 1
+market efficiency: 7 / 10
+stock price: 2 / 2
+============================================================
+Epoch 53, train loss: 0.0755, train acc: 0.9948, test loss: 0.9348, test acc: 0.7500, test f1: 0.7482
+Time elapsed: 3 minutes, 45 seconds
+
+Correct label counts vs. total label counts for test set evaluation in Epoch 53:
+analyst price target: 0 / 1
+deal price: 6 / 8
+discounted cash flow: 8 / 10
+fair value: 9 / 1
+market efficiency: 7 / 10
+stock price: 2 / 2
+============================================================
+Epoch 54, train loss: 0.0845, train acc: 0.9896, test loss: 0.9211, test acc: 0.7812, test f1: 0.7920
+Time elapsed: 3 minutes, 45 seconds
+
+Correct label counts vs. total label counts for test set evaluation in Epoch 54:
+analyst price target: 0 / 1
+deal price: 6 / 7
+discounted cash flow: 8 / 10
+fair value: 8 / 10
+market efficiency: 7 / 10
+market multiples: 1 / 1
+stock price: 2 / 2
+============================================================
+Epoch 55, train loss: 0.0609, train acc: 1.0000, test loss: 0.9371, test acc: 0.8125, test f1: 0.8229
+Time elapsed: 3 minutes, 44 seconds
+
+Correct label counts vs. total label counts for test set evaluation in Epoch 55:
+analyst price target: 0 / 1
+deal price: 6 / 7
+discounted cash flow: 8 / 9
+fair value: 7 / 10
+market efficiency: 8 / 11
+market multiples: 1 / 1
+stock price: 2 / 2
+============================================================
+Epoch 56, train loss: 0.0515, train acc: 1.0000, test loss: 0.9370, test acc: 0.7500, test f1: 0.7498
+Time elapsed: 3 minutes, 44 seconds
+
+Correct label counts vs. total label counts for test set evaluation in Epoch 56:
+analyst price target: 0 / 1
+deal price: 6 / 9
+discounted cash flow: 7 / 8
+fair value: 9 / 10
+market efficiency: 8 / 11
+stock price: 2 / 2
+============================================================
+Epoch 57, train loss: 0.0619, train acc: 1.0000, test loss: 0.9237, test acc: 0.7812, test f1: 0.7792
+Time elapsed: 3 minutes, 44 seconds
+
+Correct label counts vs. total label counts for test set evaluation in Epoch 57:
+analyst price target: 0 / 1
+deal price: 6 / 8
+discounted cash flow: 8 / 9
+fair value: 8 / 10
+market efficiency: 8 / 11
+stock price: 2 / 2
+============================================================
+Epoch 58, train loss: 0.0576, train acc: 1.0000, test loss: 0.8383, test acc: 0.8125, test f1: 0.8229
+Time elapsed: 3 minutes, 44 seconds
+
+Correct label counts vs. total label counts for test set evaluation in Epoch 58:
+analyst price target: 0 / 1
+deal price: 6 / 7
+discounted cash flow: 8 / 9
+fair value: 7 / 10
+market efficiency: 8 / 11
+market multiples: 1 / 1
+stock price: 2 / 2
+============================================================
+Epoch 59, train loss: 0.1039, train acc: 0.9896, test loss: 0.9237, test acc: 0.7500, test f1: 0.7498
+Time elapsed: 3 minutes, 43 seconds
+
+Correct label counts vs. total label counts for test set evaluation in Epoch 59:
+analyst price target: 0 / 1
+deal price: 6 / 9
+discounted cash flow: 7 / 8
+fair value: 9 / 10
+market efficiency: 8 / 11
+stock price: 2 / 2
+============================================================
+Epoch 60, train loss: 0.0596, train acc: 0.9948, test loss: 0.9600, test acc: 0.7500, test f1: 0.7403
+Time elapsed: 3 minutes, 44 seconds
+
+Correct label counts vs. total label counts for test set evaluation in Epoch 60:
+analyst price target: 0 / 1
+deal price: 6 / 8
+discounted cash flow: 8 / 9
+fair value: 9 / 10
+market efficiency: 8 / 12
+stock price: 1 / 1
+============================================================

@@ -1,0 +1,185 @@
+python classification.py
+Some weights of the model checkpoint at bert-base-uncased were not used when initializing BertModel: ['cls.predictions.bias', 'cls.predictions.transform.dense.bias', 'cls.predictions.transform.LayerNorm.weight', 'cls.predictions.decoder.weight', 'cls.seq_relationship.weight', 'cls.predictions.transform.dense.weight', 'cls.predictions.transform.LayerNorm.bias', 'cls.seq_relationship.bias']
+- This IS expected if you are initializing BertModel from the checkpoint of a model trained on another task or with another architecture (e.g. initializing a BertForSequenceClassification model from a BertForPreTraining model).     
+- This IS NOT expected if you are initializing BertModel from the checkpoint of a model that you expect to be exactly identical (initializing a BertForSequenceClassification model from a BertForSequenceClassification model).        
+Current Device: cpu 
+
+Epoch 1, train loss: 6.1570, train acc: 0.0833, test loss: 5.1565, test acc: 0.2500
+Time elapsed: 3 minutes, 48 seconds
+
+Epoch 2, train loss: 5.0179, train acc: 0.2812, test loss: 4.1654, test acc: 0.2812
+Time elapsed: 3 minutes, 47 seconds
+
+Epoch 3, train loss: 4.1679, train acc: 0.3281, test loss: 3.3702, test acc: 0.2812
+Time elapsed: 3 minutes, 50 seconds
+
+Epoch 4, train loss: 3.4887, train acc: 0.3281, test loss: 2.8808, test acc: 0.3438
+Time elapsed: 3 minutes, 36 seconds
+
+Epoch 5, train loss: 3.1807, train acc: 0.3698, test loss: 2.5744, test acc: 0.4375
+Time elapsed: 3 minutes, 33 seconds
+
+Epoch 6, train loss: 2.6851, train acc: 0.3802, test loss: 2.3868, test acc: 0.4062
+Time elapsed: 3 minutes, 33 seconds
+
+Epoch 7, train loss: 2.6243, train acc: 0.4219, test loss: 2.2715, test acc: 0.5000
+Time elapsed: 3 minutes, 33 seconds
+
+Epoch 8, train loss: 2.4087, train acc: 0.4271, test loss: 2.1729, test acc: 0.5000
+Time elapsed: 3 minutes, 33 seconds
+
+Epoch 9, train loss: 2.2149, train acc: 0.4375, test loss: 2.0753, test acc: 0.5000
+Time elapsed: 3 minutes, 33 seconds
+
+Epoch 10, train loss: 2.1814, train acc: 0.4844, test loss: 1.9987, test acc: 0.5000
+Time elapsed: 3 minutes, 33 seconds
+
+Epoch 11, train loss: 1.9909, train acc: 0.4896, test loss: 1.9288, test acc: 0.5000
+Time elapsed: 3 minutes, 33 seconds
+
+Epoch 12, train loss: 1.8463, train acc: 0.5417, test loss: 1.8316, test acc: 0.5938
+Time elapsed: 3 minutes, 33 seconds
+
+Epoch 13, train loss: 1.7999, train acc: 0.5365, test loss: 1.7604, test acc: 0.5312
+Time elapsed: 3 minutes, 34 seconds
+
+Epoch 14, train loss: 1.6644, train acc: 0.5729, test loss: 1.7264, test acc: 0.5000
+Time elapsed: 3 minutes, 34 seconds
+
+Epoch 15, train loss: 1.5104, train acc: 0.6615, test loss: 1.6874, test acc: 0.5938
+Time elapsed: 3 minutes, 33 seconds
+
+Epoch 16, train loss: 1.5127, train acc: 0.6667, test loss: 1.6005, test acc: 0.5625
+Time elapsed: 3 minutes, 34 seconds
+
+Epoch 17, train loss: 1.3003, train acc: 0.7083, test loss: 1.5401, test acc: 0.5938
+Time elapsed: 3 minutes, 35 seconds
+
+Epoch 18, train loss: 1.2097, train acc: 0.7292, test loss: 1.4669, test acc: 0.5938
+Time elapsed: 3 minutes, 34 seconds
+
+Epoch 19, train loss: 1.0290, train acc: 0.7969, test loss: 1.4142, test acc: 0.5625
+Time elapsed: 3 minutes, 33 seconds
+
+Epoch 20, train loss: 0.9691, train acc: 0.8281, test loss: 1.3579, test acc: 0.5938
+Time elapsed: 3 minutes, 33 seconds
+
+Epoch 21, train loss: 0.9350, train acc: 0.8177, test loss: 1.2996, test acc: 0.5938
+Time elapsed: 3 minutes, 33 seconds
+
+Epoch 22, train loss: 0.7487, train acc: 0.8698, test loss: 1.2272, test acc: 0.6562
+Time elapsed: 3 minutes, 33 seconds
+
+Epoch 23, train loss: 0.6787, train acc: 0.9010, test loss: 1.1769, test acc: 0.6250
+Time elapsed: 3 minutes, 33 seconds
+
+Epoch 24, train loss: 0.5900, train acc: 0.9010, test loss: 1.1516, test acc: 0.6562
+Time elapsed: 3 minutes, 33 seconds
+
+Epoch 25, train loss: 0.5066, train acc: 0.9115, test loss: 1.1338, test acc: 0.6250
+Time elapsed: 3 minutes, 33 seconds
+
+Epoch 26, train loss: 0.4026, train acc: 0.9583, test loss: 1.1083, test acc: 0.6250
+Time elapsed: 3 minutes, 33 seconds
+
+Epoch 27, train loss: 0.4091, train acc: 0.9479, test loss: 1.1286, test acc: 0.5938
+Time elapsed: 3 minutes, 33 seconds
+
+Epoch 28, train loss: 0.4137, train acc: 0.9531, test loss: 1.0930, test acc: 0.6250
+Time elapsed: 3 minutes, 34 seconds
+
+Epoch 29, train loss: 0.4181, train acc: 0.9375, test loss: 1.1240, test acc: 0.6875
+Time elapsed: 3 minutes, 34 seconds
+
+Epoch 30, train loss: 0.3857, train acc: 0.9375, test loss: 1.1389, test acc: 0.6250
+Time elapsed: 3 minutes, 34 seconds
+
+Epoch 31, train loss: 0.3457, train acc: 0.9479, test loss: 1.0717, test acc: 0.5938
+Time elapsed: 3 minutes, 34 seconds
+
+Epoch 32, train loss: 0.2450, train acc: 0.9792, test loss: 1.0753, test acc: 0.6562
+Time elapsed: 3 minutes, 33 seconds
+
+Epoch 33, train loss: 0.2539, train acc: 0.9635, test loss: 1.0235, test acc: 0.6562
+Time elapsed: 3 minutes, 33 seconds
+
+Epoch 34, train loss: 0.2250, train acc: 0.9844, test loss: 1.0671, test acc: 0.7188
+Time elapsed: 3 minutes, 34 seconds
+
+Epoch 35, train loss: 0.1799, train acc: 1.0000, test loss: 0.9512, test acc: 0.7188
+Time elapsed: 3 minutes, 34 seconds
+
+Epoch 36, train loss: 0.1873, train acc: 0.9792, test loss: 1.1186, test acc: 0.6875
+Time elapsed: 3 minutes, 34 seconds
+
+Epoch 37, train loss: 0.1994, train acc: 0.9688, test loss: 1.0179, test acc: 0.7188
+Time elapsed: 3 minutes, 34 seconds
+
+Epoch 38, train loss: 0.2223, train acc: 0.9740, test loss: 0.9382, test acc: 0.7500
+Time elapsed: 3 minutes, 34 seconds
+
+Epoch 39, train loss: 0.2145, train acc: 0.9844, test loss: 1.2989, test acc: 0.6250
+Time elapsed: 3 minutes, 34 seconds
+
+Epoch 40, train loss: 0.1821, train acc: 0.9792, test loss: 0.9392, test acc: 0.6875
+Time elapsed: 3 minutes, 34 seconds
+
+Epoch 41, train loss: 0.1687, train acc: 0.9792, test loss: 0.9909, test acc: 0.7188
+Time elapsed: 3 minutes, 34 seconds
+
+Epoch 42, train loss: 0.1337, train acc: 0.9844, test loss: 1.1136, test acc: 0.7188
+Time elapsed: 3 minutes, 39 seconds
+
+Epoch 43, train loss: 0.1510, train acc: 0.9844, test loss: 0.9729, test acc: 0.7188
+Time elapsed: 3 minutes, 47 seconds
+
+Epoch 44, train loss: 0.1016, train acc: 0.9948, test loss: 0.9364, test acc: 0.7500
+Time elapsed: 3 minutes, 47 seconds
+
+Epoch 45, train loss: 0.0863, train acc: 1.0000, test loss: 1.0602, test acc: 0.7188
+Time elapsed: 3 minutes, 50 seconds
+
+Epoch 46, train loss: 0.1186, train acc: 0.9896, test loss: 1.0771, test acc: 0.7500
+Time elapsed: 3 minutes, 46 seconds
+
+Epoch 47, train loss: 0.0904, train acc: 0.9896, test loss: 0.9595, test acc: 0.7812
+Time elapsed: 3 minutes, 39 seconds
+
+Epoch 48, train loss: 0.0720, train acc: 1.0000, test loss: 0.9475, test acc: 0.7500
+Time elapsed: 3 minutes, 38 seconds
+
+Epoch 49, train loss: 0.1110, train acc: 0.9896, test loss: 0.9074, test acc: 0.7500
+Time elapsed: 3 minutes, 36 seconds
+
+Epoch 50, train loss: 0.0550, train acc: 1.0000, test loss: 0.7999, test acc: 0.7812
+Time elapsed: 3 minutes, 36 seconds
+
+Epoch 51, train loss: 0.0604, train acc: 1.0000, test loss: 0.9901, test acc: 0.7500
+Time elapsed: 3 minutes, 44 seconds
+
+Epoch 52, train loss: 0.0889, train acc: 0.9948, test loss: 0.9916, test acc: 0.7188
+Time elapsed: 3 minutes, 46 seconds
+
+Epoch 53, train loss: 0.0755, train acc: 0.9948, test loss: 0.9348, test acc: 0.7500
+Time elapsed: 3 minutes, 48 seconds
+
+Epoch 54, train loss: 0.0845, train acc: 0.9896, test loss: 0.9211, test acc: 0.7812
+Time elapsed: 3 minutes, 47 seconds
+
+Epoch 55, train loss: 0.0609, train acc: 1.0000, test loss: 0.9371, test acc: 0.8125
+Time elapsed: 3 minutes, 47 seconds
+
+Epoch 56, train loss: 0.0515, train acc: 1.0000, test loss: 0.9370, test acc: 0.7500
+Time elapsed: 3 minutes, 48 seconds
+
+Epoch 57, train loss: 0.0619, train acc: 1.0000, test loss: 0.9237, test acc: 0.7812
+Time elapsed: 3 minutes, 47 seconds
+
+Epoch 58, train loss: 0.0576, train acc: 1.0000, test loss: 0.8383, test acc: 0.8125
+Time elapsed: 3 minutes, 48 seconds
+
+Epoch 59, train loss: 0.1039, train acc: 0.9896, test loss: 0.9237, test acc: 0.7500
+Time elapsed: 3 minutes, 47 seconds
+
+Epoch 60, train loss: 0.0596, train acc: 0.9948, test loss: 0.9600, test acc: 0.7500
+Time elapsed: 3 minutes, 47 seconds
